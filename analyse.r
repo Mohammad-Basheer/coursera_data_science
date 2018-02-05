@@ -161,4 +161,11 @@ names(step4_clean_data) <- hr_names
 #---> STEP 4 DONE
 
 #---> STEP 5 START
+library(dplyr)
+
 #---> STEP 5 DONE
+step5_data_col_names <- c("Subjects", "Activities", step2_colnames)
+step5_data <- clean_data[, step5_data_col_names]
+step5_clean_data <- step5_data %>%  group_by(Subjects, Activities) %>% summarise_all(mean)
+
+
