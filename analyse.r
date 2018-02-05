@@ -11,7 +11,6 @@ project_dir <- "/home/patrick/Desktop/DOST_DataScience"
 features <- read.table(paste(project_dir,"/Final_Project/UCI HAR Dataset/features.txt", sep=""))
 activity_list <- read.table(paste(project_dir,"/Final_Project/UCI HAR Dataset/activity_labels.txt", sep=""))
 
-
 ## Test data set (X,Y and subject)
 test_data_x <- paste(project_dir, "/Final_Project/UCI HAR Dataset/test/X_test.txt", sep="")
 test_x <- read.table(test_data_x)
@@ -83,11 +82,82 @@ step2_clean_data <- clean_data[,step2_colnames]
 #---> STEP 2 DONE
 
 #---> STEP 3 START
-
-
+# Extract Activities and STEP 2 data from clean_data
+step3_colnames <- c("Activities", step2_colnames)
+step3_clean_data <- clean_data[, step3_colnames]
 #---> STEP 3 DONE
 
 #---> STEP 4 START
+hr_names <- c("Activities",
+"Body Acceleration Mean - X",
+"Body Acceleration Mean - Y",
+"Body Acceleration Mean - Z",
+"Gravity Acceleration Mean - X",
+"Gravity Acceleration Mean - Y",
+"Gravity Acceleration Mean - Z",
+"Body Acceleration (Jerk) Mean - X",
+"Body Acceleration (Jerk) Mean - Y",
+"Body Acceleration (Jerk) Mean - Z",
+"Angular Velocity Mean - X",
+"Angular Velocity Mean - Y",
+"Angular Velocity Mean - Z",
+"Angular Velocity (Jerk) Mean - X",
+"Angular Velocity (Jerk) Mean - Y",
+"Angular Velocity (Jerk) Mean - Z",
+"Body Acceleration Magnitude Mean",
+"Gravity Acceleration Magnitude Mean",
+"Body Acceleration (Jerk) Magnitude Mean",
+"Angular Velocity Magnitude Mean",
+"Angular Velocity (Jerk) Magnitude Mean",
+"Fourier Body Acceleration Mean - X",
+"Fourier Body Acceleration Mean - Y",
+"Fourier Body Acceleration Mean - Z",
+"Fourier Body Acceleration (Jerk) Mean - X",
+"Fourier Body Acceleration (Jerk) Mean - Y",
+"Fourier Body Acceleration (Jerk) Mean - Z",
+"Fourier Angular Velocity Mean - X",
+"Fourier Angular Velocity Mean - Y",
+"Fourier Angular Velocity Mean - Z",
+"Fourier Body Acceleration Magnitude Mean",
+"Fourier Body Acceleration (Jerk) Magnitude Mean",
+"Fourier Body Angular Velocity Magnitude Mean",
+"Fourier Body Angular Velocity Magnitude (Jerk) Mean",
+"Body Acceleration Std. Dev. - X",
+"Body Acceleration Std. Dev. - Y",
+"Body Acceleration Std. Dev. - Z",
+"Gravity Acceleration Std. Dev. - X",
+"Gravity Acceleration Std. Dev. - Y",
+"Gravity Acceleration Std. Dev. - Z",
+"Body Acceleration (Jerk) Std. Dev. - X",
+"Body Acceleration (Jerk) Std. Dev. - Y",
+"Body Acceleration (Jerk) Std. Dev. - Z",
+"Angular Velocity Std. Dev. - X",
+"Angular Velocity Std. Dev. - Y",
+"Angular Velocity Std. Dev. - Z",
+"Angular Velocity (Jerk) Std. Dev. - X",
+"Angular Velocity (Jerk) Std. Dev. - Y",
+"Angular Velocity (Jerk) Std. Dev. - Z",
+"Body Acceleration Magnitude Std. Dev.",
+"Gravity Acceleration Magnitude Std. Dev.",
+"Body Acceleration (Jerk) Magnitude Std. Dev.",
+"Angular Velocity Magnitude Std. Dev",
+"Angular Velocity (Jerk) Magnitude Std. Dev.",
+"Fourier Body Acceleration Std. Dev. - X",
+"Fourier Body Acceleration Std. Dev. - Y",
+"Fourier Body Acceleration Std. Dev. - Z",
+"Fourier Body Acceleration (Jerk) Std. Dev. - X",
+"Fourier Body Acceleration (Jerk) Std. Dev. - Y",
+"Fourier Body Acceleration (Jerk) Std. Dev. - Z",
+"Fourier Angular Velocity Std. Dev. - X",
+"Fourier Angular Velocity Std. Dev. - Y",
+"Fourier Angular Velocity Std. Dev. - Z",
+"Fourier Body Acceleration Magnitude Std. Dev.",
+"Fourier Body Acceleration (Jerk) Magnitude Std. Dev.",
+"Fourier Body Angular Velocity Magnitude Std. Dev",
+"Fourier Body Angular Velocity Magnitude (Jerk) Std. Dev.")
+
+step4_clean_data <- step3_clean_data
+names(step4_clean_data) <- hr_names
 #---> STEP 4 DONE
 
 #---> STEP 5 START
