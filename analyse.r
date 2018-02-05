@@ -1,8 +1,9 @@
 #  Getting and Cleaning Data by Coursera and Johns Hopkins
 #  Author: Patrick Michael Chiuco
-#  *** Padded rows with missing activity and subject values with NA
+#  *** Padded rows with missing activity and subject values with  NA
 
 project_dir <- "/home/patrick/Desktop/DOST_DataScience"
+output_dir <- paste(project_dir, "/output", sep="")
 
 #---> STEP 1 Start
 # Get features and activity list tables
@@ -40,7 +41,7 @@ names(test_x) <- features$V2
 test_subj_y[nrow(test_subj_y)+1,] <- NA # See ***
 test_x["Subjects"] <- test_subj_y
 
-test_acts <- rep(1, nrow(test_y)+1)
+test_acts <- rep(NA, nrow(test_y)+1)
 for(index in 1:nrow(test_y)){
   g <- activity_list$V2[test_y[index,]]
   test_acts[index] = as.character(g)
@@ -53,7 +54,7 @@ names(train_x) <- features$V2
 train_subj_y[nrow(train_subj_y)+1,] <- NA
 train_x["Subjects"] <- train_subj_y
 
-train_acts <- rep(1, nrow(train_y)+1) 
+train_acts <- rep(NA, nrow(train_y)+1) 
 for(index in 1:nrow(train_y)){
   g <- activity_list$V2[train_y[index,]]
   train_acts[index] = as.character(g)
@@ -88,6 +89,7 @@ step3_clean_data <- clean_data[, step3_colnames]
 #---> STEP 3 DONE
 
 #---> STEP 4 START
+# Human readable names
 hr_names <- c("Activities",
 "Body Acceleration Mean - X",
 "Body Acceleration Mean - Y",
@@ -158,14 +160,18 @@ hr_names <- c("Activities",
 
 step4_clean_data <- step3_clean_data
 names(step4_clean_data) <- hr_names
+step4_output <- paste(output_dir, "/clean_data1.txt", sep="")
+write.table(step4_clean_data, step4_output, sep=",", row.names=FALSE)
 #---> STEP 4 DONE
 
 #---> STEP 5 START
 library(dplyr)
-
-#---> STEP 5 DONE
 step5_data_col_names <- c("Subjects", "Activities", step2_colnames)
 step5_data <- clean_data[, step5_data_col_names]
+names(step5_data) <- c("Subjects", hr_names)
 step5_clean_data <- step5_data %>%  group_by(Subjects, Activities) %>% summarise_all(mean)
+step5_output <- paste(output_dir, "/clean_data2.txt",sep="")
+write.table(step5_clean_data, step5_output, sep=",", row.names=FALSE)
+#---> STEP 5 DONE
 
 
