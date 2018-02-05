@@ -1,0 +1,40 @@
+Acc:
+Body acceleration tBodyAcc-XYZ
+Gravity acceleration tGravityAcc-XYZ
+
+jerk:
+
+Body Acceleration (Jerk) tBodyAccJerk-XYZ
+Angular Velocity (Jerk) tBodyGyroJerk-XYZ
+
+Angular Velocity tBodyGyro-XYZ
+
+magnitude:
+
+Body acceleration magnitude tBodyAccMag
+Gravity Acceleration Maganitude  tGravityAccMag
+
+
+Body Acceleration (Jerk) magnitude tBodyAccJerkMag
+
+Angular Velocity Magnitude tBodyGyroMag
+Angular Velocity (Jerk) Magnitude - tBodyGyroJerkMag
+
+
+fourier:
+Fourier Body Acceleration fBodyAcc-XYZ
+Fourier Body Acceleration (Jerk) fBodyAccJerk-XYZ
+Fourier Angular Velocity fBodyGyro-XYZ
+Fourier Body Acceleration Magnitude fBodyAccMag
+Fourier Body Acceleration (Jerk) Magnitude fBodyAccJerkMag
+Fourier Angular Velocity Magnitude fBodyGyroMag
+Fourier Angular Velocity (Jerk) Magnitude fBodyGyroJerkMag
+
+Others: 
+Fourier Body Angular Velocity Magnitude Mean fBodyBodyGyroMag-mean()
+Fourier Body Angular Velocity Magnitude (Jerk) Mean
+fBodyBodyGyroJerkMag-mean()
+Fourier Body Acceleration (Jerk) Magnitude Mean
+fBodyBodyAccJerkMag-mean()
+
+
