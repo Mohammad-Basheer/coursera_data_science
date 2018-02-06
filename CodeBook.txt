@@ -1,255 +1,72 @@
 Hi! Below are the tidy data-feature list mappings and their respective descriptions.
 
-Tidy Data Name: "Subjects"
-Feature List Name: None
-Description: Subject number from subject_<data_set>.txt
+Tidy Data Column Name											Feature List Equivalent
 
-Tidy Data Name: Activities
-Feature List Name: None
-Description: Activity name from acitivity_labels.txt
-
-Tidy Data Name: Body Acceleration Mean - X                             
-Feature List Name: tBodyAcc-mean()-X
-Description: X component mean of body acceleration reading.
-
-Tidy Data Name: Body Acceleration Mean - Y
-Feature List Name: tBodyAcc-mean()-Y
-Description: Y component mean of body acceleration reading.
-
-Tidy Data Name: Body Acceleration Mean - Z
-Feature List Name: tBodyAcc-mean()-Z
-Description: Z component mean of body acceleration reading.
-
-Tidy Data Name: Gravity Acceleration Mean - X
-Feature List Name: tGravityAcc-mean()-X      
-Description: X component mean of acceleration due to gravity.
-
-Tidy Data Name: Gravity Acceleration Mean - Y
-Feature List Name: tGravityAcc-mean()-Y
-Description: Y component mean of acceleration due to gravity.
-
-Tidy Data Name: Gravity Acceleration Mean - Z
-Feature List Name: tGravityAcc-mean()-Z
-Description: Z component mean of acceleration due to gravity.
-
-Tidy Data Name: Body Acceleration (Jerk) Mean - X
-Feature List Name: tBodyAccJerk-mean()-X
-Description: X component mean of the body acceleration jerk signal.
-
-Tidy Data Name: Body Acceleration (Jerk) Mean - Y
-Feature List Name: tBodyAccJerk-mean()-Y
-Description: Y component mean of the body acceleration jerk signal.
-
-Tidy Data Name: Body Acceleration (Jerk) Mean - Z
-Feature List Name: tBodyAccJerk-mean()-Z
-Description: Z component mean of the body acceleration jerk signal.
-
-Tidy Data Name: Angular Velocity Mean - X
-Feature List Name: tBodyGyro-mean()-X
-Description: X component mean of the angular velocity.
-
-Tidy Data Name: Angular Velocity Mean - Y
-Feature List Name: tBodyGyro-mean()-Y
-Description: Y component mean of the angular velocity.
-
-Tidy Data Name: Angular Velocity Mean - Z
-Feature List Name: tBodyGyro-mean()-Z
-Description: X component mean of the angular velocity.
-
-Tidy Data Name: Angular Velocity (Jerk) Mean - X
-Feature List Name: tBodyGyroJerk-mean()-X
-Description: X component mean of angular velocity jerk signal.
-
-Tidy Data Name: Angular Velocity (Jerk) Mean - Y
-Feature List Name: tBodyGyroJerk-mean()-Y
-Description: Y component mean of angular velocity jerk signal.
-
-Tidy Data Name: Angular Velocity (Jerk) Mean - Z
-Feature List Name: tBodyGyroJerk-mean()-Z
-Description: Z component mean of angular velocity jerk signal.
-
-Tidy Data Name: Body Acceleration Magnitude Mean
-Feature List Name: tBodyAccMag-mean()
-Description: Mean magnitude of body acceleration.
-
-Tidy Data Name: Gravity Acceleration Magnitude Mean
-Feature List Name: tGravityAccMag-mean()
-Description: Mean magnitude of gravity acceleration.
-
-Tidy Data Name: Body Acceleration (Jerk) Magnitude Mean
-Feature List Name: tBodyAccJerkMag-mean()
-Description: Mean magnitude of the body accelerations jerk signal.
-
-
-Tidy Data Name: Angular Velocity Magnitude Mean
-Feature List Name: tBodyGyroMag-mean()
-Description: Mean magnitude of angular velocity.
-
-Tidy Data Name: Angular Velocity (Jerk) Magnitude Mean
-Feature List Name: tBodyGyroJerkMag-mean()
-Description: Mean magnitude of angular velocity's jerk signal.
-
-Tidy Data Name: Fourier Body Acceleration Mean - X 
-Feature List Name: fBodyAcc-mean()-X
-Description: X component of the fourier body acceleration mean.
-
-Tidy Data Name: Fourier Body Acceleration Mean - Y 
-Feature List Name: fBodyAcc-mean()-Y
-Description: X component of the fourier body acceleration mean.
-
-Tidy Data Name: Fourier Body Acceleration Mean - Z 
-Feature List Name: fBodyAcc-mean()-Z
-Description: X component of the fourier body acceleration mean.
-
-
-Tidy Data Name: Fourier Body Acceleration (Jerk) Mean - X 
-Feature List Name: fBodyAccJerk-mean()-X
-Description: X component of the fourier body acceleration jerk signal mean.
-
-Tidy Data Name: Fourier Body Acceleration (Jerk) Mean - Y 
-Feature List Name: fBodyAccJerk-mean()-Y
-Description: Y component of the fourier body acceleration jerk signal mean.
-
-Tidy Data Name: Fourier Body Acceleration (Jerk) Mean - Z 
-Feature List Name: fBodyAccJerk-mean()-Z
-Description: Z component of the fourier body acceleration jerk signal mean.
-
-Tidy Data Name: Fourier Angular Velocity Mean - X 
-Feature List Name: "fBodyGyro-mean()-X"         
-Description: X component mean of the fourier body acceleration mean.
-
-Tidy Data Name: Fourier Body Acceleration Mean - Y 
-Feature List Name: fBodyGyro-mean()-Y
-Description: X component of the fourier body acceleration mean.
-
-Tidy Data Name: Fourier Body Acceleration Mean - Z 
-Feature List Name: fBodyGyro-mean()-Z
-Description: X component of the fourier body acceleration mean.
-""                      
-"Fourier Angular Velocity Mean - Y"                       
-"Fourier Angular Velocity Mean - Z"                      
-"Fourier Body Acceleration Magnitude Mean"                
-"Fourier Body Acceleration (Jerk) Magnitude Mean"        
-"Fourier Body Angular Velocity Magnitude Mean"            
-"Fourier Body Angular Velocity Magnitude (Jerk) Mean"    
-"Body Acceleration Std. Dev. - X"                         
-"Body Acceleration Std. Dev. - Y"                        
-"Body Acceleration Std. Dev. - Z"                         
-"Gravity Acceleration Std. Dev. - X"                     
-"Gravity Acceleration Std. Dev. - Y"                      
-"Gravity Acceleration Std. Dev. - Z"                     
-"Body Acceleration (Jerk) Std. Dev. - X"                  
-"Body Acceleration (Jerk) Std. Dev. - Y"                 
-"Body Acceleration (Jerk) Std. Dev. - Z"                  
-"Angular Velocity Std. Dev. - X"                         
-"Angular Velocity Std. Dev. - Y"                          
-"Angular Velocity Std. Dev. - Z"                         
-"Angular Velocity (Jerk) Std. Dev. - X"                   
-"Angular Velocity (Jerk) Std. Dev. - Y"                  
-"Angular Velocity (Jerk) Std. Dev. - Z"                   
-"Body Acceleration Magnitude Std. Dev."                  
-"Gravity Acceleration Magnitude Std. Dev."                
-"Body Acceleration (Jerk) Magnitude Std. Dev."           
-"Angular Velocity Magnitude Std. Dev"                     
-"Angular Velocity (Jerk) Magnitude Std. Dev."            
-"Fourier Body Acceleration Std. Dev. - X"                 
-"Fourier Body Acceleration Std. Dev. - Y"                
-"Fourier Body Acceleration Std. Dev. - Z"                 
-"Fourier Body Acceleration (Jerk) Std. Dev. - X"         
-"Fourier Body Acceleration (Jerk) Std. Dev. - Y"          
-"Fourier Body Acceleration (Jerk) Std. Dev. - Z"         
-"Fourier Angular Velocity Std. Dev. - X"                  
-"Fourier Angular Velocity Std. Dev. - Y"                 
-"Fourier Angular Velocity Std. Dev. - Z"                  
-"Fourier Body Acceleration Magnitude Std. Dev."          
-"Fourier Body Acceleration (Jerk) Magnitude Std. Dev."    
-"Fourier Body Angular Velocity Magnitude Std. Dev"       
-"Fourier Body Angular Velocity Magnitude (Jerk) Std. Dev."
-                     
-
-
-
-""     
-"fBodyAccMag-mean()"        
-"fBodyBodyAccJerkMag-mean()" 
-"fBodyBodyGyroMag-mean()"   
-"fBodyBodyGyroJerkMag-mean()"
-"tBodyAcc-std()-X"          
-"tBodyAcc-std()-Y"           
-"tBodyAcc-std()-Z"          
-"tGravityAcc-std()-X"       
-"tGravityAcc-std()-Y"       
-"tGravityAcc-std()-Z"        
-"tBodyAccJerk-std()-X"      
-"tBodyAccJerk-std()-Y"      
-"tBodyAccJerk-std()-Z"      
-"tBodyGyro-std()-X"          
-"tBodyGyro-std()-Y"         
-"tBodyGyro-std()-Z"         
-"tBodyGyroJerk-std()-X"     
-"tBodyGyroJerk-std()-Y"      
-"tBodyGyroJerk-std()-Z"     
-"tBodyAccMag-std()"         
-"tGravityAccMag-std()"      
-"tBodyAccJerkMag-std()"      
-"tBodyGyroMag-std()"        
-"tBodyGyroJerkMag-std()"    
-"fBodyAcc-std()-X"          
-"fBodyAcc-std()-Y"           
-"fBodyAcc-std()-Z"          
-"fBodyAccJerk-std()-X"      
-"fBodyAccJerk-std()-Y"      
-"fBodyAccJerk-std()-Z"       
-"fBodyGyro-std()-X"         
-"fBodyGyro-std()-Y"         
-"fBodyGyro-std()-Z"         
-"fBodyAccMag-std()"          
-"fBodyBodyAccJerkMag-std()" 
-"fBodyBodyGyroMag-std()"    
-"fBodyBodyGyroJerkMag-std()" 
-
-
-  
-
-
-
-Acc:
-Body acceleration tBodyAcc-XYZ
-Gravity acceleration tGravityAcc-XYZ
-
-jerk:
-
-Body Acceleration (Jerk) tBodyAccJerk-XYZ
-Angular Velocity (Jerk) tBodyGyroJerk-XYZ
-
-Angular Velocity tBodyGyro-XYZ
-
-magnitude:
-
-Body acceleration magnitude tBodyAccMag
-Gravity Acceleration Maganitude  tGravityAccMag
-
-
-Body Acceleration (Jerk) magnitude tBodyAccJerkMag
-
-Angular Velocity Magnitude tBodyGyroMag
-Angular Velocity (Jerk) Magnitude - tBodyGyroJerkMag
-
-
-fourier:
-Fourier Body Acceleration fBodyAcc-XYZ
-Fourier Body Acceleration (Jerk) fBodyAccJerk-XYZ
-Fourier Angular Velocity fBodyGyro-XYZ
-Fourier Body Acceleration Magnitude fBodyAccMag
-Fourier Body Acceleration (Jerk) Magnitude fBodyAccJerkMag
-Fourier Angular Velocity Magnitude fBodyGyroMag
-Fourier Angular Velocity (Jerk) Magnitude fBodyGyroJerkMag
-
-Others: 
-Fourier Body Angular Velocity Magnitude Mean fBodyBodyGyroMag-mean()
-Fourier Body Angular Velocity Magnitude (Jerk) Mean
-fBodyBodyGyroJerkMag-mean()
-Fourier Body Acceleration (Jerk) Magnitude Mean
-fBodyBodyAccJerkMag-mean()
-
-
+Subjects														None (matched)
+Activities														None
+Body Acceleration Mean - X                             			tBodyAcc-mean()-X
+Body Acceleration Mean - Y										tBodyAcc-mean()-Y
+Body Acceleration Mean - Z										tBodyAcc-mean()-Z
+Gravity Acceleration Mean - X									tGravityAcc-mean()-X      
+Gravity Acceleration Mean - Y									tGravityAcc-mean()-Y
+Gravity Acceleration Mean - Z									tGravityAcc-mean()-Z
+Body Acceleration (Jerk) Mean - X								tBodyAccJerk-mean()-X
+Body Acceleration (Jerk) Mean - Y								tBodyAccJerk-mean()-Y
+Body Acceleration (Jerk) Mean - Z								tBodyAccJerk-mean()-Z
+Angular Velocity Mean - X										tBodyGyro-mean()-X
+Angular Velocity Mean - Y										tBodyGyro-mean()-Y
+Angular Velocity Mean - Z										tBodyGyro-mean()-Z
+Angular Velocity (Jerk) Mean - X								tBodyGyroJerk-mean()-X
+Angular Velocity (Jerk) Mean - Y								tBodyGyroJerk-mean()-Y
+Angular Velocity (Jerk) Mean - Z								tBodyGyroJerk-mean()-Z
+Body Acceleration Magnitude Mean								tBodyAccMag-mean()
+Gravity Acceleration Magnitude Mean								tGravityAccMag-mean()
+Body Acceleration (Jerk) Magnitude Mean							tBodyAccJerkMag-mean()
+Angular Velocity Magnitude Mean									tBodyGyroMag-mean()
+Angular Velocity (Jerk) Magnitude Mean							tBodyGyroJerkMag-mean()
+Fourier Body Acceleration Mean - X 								fBodyAcc-mean()-X
+Fourier Body Acceleration Mean - Y 								fBodyAcc-mean()-Y
+Fourier Body Acceleration Mean - Z 								fBodyAcc-mean()-Z
+Fourier Body Acceleration (Jerk) Mean - X 						fBodyAccJerk-mean()-X
+Fourier Body Acceleration (Jerk) Mean - Y 						fBodyAccJerk-mean()-Y
+Fourier Body Acceleration (Jerk) Mean - Z 						fBodyAccJerk-mean()-Z
+Fourier Angular Velocity Mean - X 								fBodyGyro-mean()-X         
+Fourier Body Acceleration Mean - Y 								fBodyGyro-mean()-Y
+Fourier Body Acceleration Mean - Z 								fBodyGyro-mean()-Z
+Fourier Body Acceleration Magnitude Mean 						fBodyAccMag-mean()
+Fourier Body Acceleration (Jerk) Magnitude Mean 				fBodyBodyAccJerkMag-mean()
+Fourier Body Angular Velocity Magnitude Mean					fBodyBodyGyroMag-mean()
+Fourier Body Angular Velocity Magnitude (Jerk) Mean 			fBodyBodyGyroJerkMag-mean()
+Body Acceleration Std. Dev. - X									tBodyAcc-std()-X
+Body Acceleration Std. Dev. -Y									tBodyAcc-std()-Y
+Body Acceleration Std. Dev. - Z									tBodyAcc-std()-Z
+Gravity Acceleration Std. Dev. - X 								tGravityAcc-std()-X
+Gravity Acceleration Std. Dev. - Y								tGravityAcc-std()-Y
+Gravity Acceleration Std. Dev. - Z								tGravityAcc-std()-X
+Body Acceleration (Jerk) Std. Dev. - X      					tBodyAccJerk-std()-X
+Body Acceleration (Jerk) Std. Dev. - Y                  		tBodyAccJerk-std()-Y
+Body Acceleration (Jerk) Std. Dev. - Z   						tBodyAccJerk-std()-X
+Angular Velocity Std. Dev. - X 									tBodyGyro-std()-X
+Angular Velocity Std. Dev. - Y 									tBodyGyro-std()-Y
+Angular Velocity Std. Dev. - Z 									tBodyGyro-std()-Z
+Angular Velocity (Jerk) Std. Dev. - X 							tBodyGyroJerk-std()-X
+Angular Velocity (Jerk) Std. Dev. - Y 							tBodyGyroJerk-std()-Y
+Angular Velocity (Jerk) Std. Dev. - Z 							tBodyGyroJerk-std()-Z
+Body Acceleration Magnitude Std. Dev. 							tBodyAccMag-std()
+Gravity Acceleration Magnitude Std. Dev. 						tGravityAccMag-std()
+Body Acceleration (Jerk) Magnitude Std. Dev.					tBodyAccJerkMag-std()
+Angular Velocity Magnitude Std. Dev. 							tBodyGyroMag-std()
+Angular Velocity (Jerk) Magnitude Std. Dev. 					tBodyGyroJerkMag-std()
+Fourier Body Acceleration Std. Dev. - X 						fBodyAcc-std()-X
+Fourier Body Acceleration Std. Dev. - Y 						fBodyAcc-std()-Y
+Fourier Body Acceleration Std. Dev. - Z 						fBodyAcc-std()-Z
+Fourier Body Acceleration (Jerk) Std. Dev. - X 					fBodyAccJerk-std()-X
+Fourier Body Acceleration (Jerk) Std. Dev. - Y 					fBodyAccJerk-std()-Y
+Fourier Body Acceleration (Jerk) Std. Dev. - Z 					fBodyAccJerk-std()-Z
+Fourier Angular Velocity Std. Dev. - X 							fBodyGyro-std()-X
+Fourier Angular Velocity Std. Dev. - Y 							fBodyGyro-std()-Y
+Fourier Angular Velocity Std. Dev. - Z 							fBodyGyro-std()-Z
+Fourier Body Acceleration Magnitude Std. Dev. 					fBodyAccMag-std()
+Fourier Body Acceleration (Jerk) Magnitude Std. Dev. 			fBodyBodyAccJerkMag-std()
+Fourier Body Angular Velocity Magnitude Std. Dev 				fBodyBodyGyroMag-std()
+Fourier Body Angular Velocity Magnitude (Jerk) Std. Dev. 		fBodyBodyGyroJerkMag-std()
