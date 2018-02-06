@@ -9,28 +9,28 @@ output_dir <- paste(project_dir, "/OutputFiles", sep="")
 # Get features and activity list tables
 
 ## Features and activity list data sets
-features <- read.table(paste(project_dir,"/DataFolder/UCI HAR Dataset/features.txt", sep=""))
-activity_list <- read.table(paste(project_dir,"/DataFolder/UCI HAR Dataset/activity_labels.txt", sep=""))
+features <- read.table(paste(project_dir,"/features.txt", sep=""))
+activity_list <- read.table(paste(project_dir,"/activity_labels.txt", sep=""))
 
 ## Test data set (X,Y and subject)
-test_data_x <- paste(project_dir, "/DataFolder/UCI HAR Dataset/test/X_test.txt", sep="")
+test_data_x <- paste(project_dir, "/UCI HAR Dataset/test/X_test.txt", sep="")
 test_x <- read.table(test_data_x)
 
-test_data_y <- paste(project_dir, "/DataFolder/UCI HAR Dataset/test/y_test.txt", sep="")
+test_data_y <- paste(project_dir, "/UCI HAR Dataset/test/y_test.txt", sep="")
 test_y <- read.delim(test_data_y)
 
-test_subject_y <- paste(project_dir, "/DataFolder/UCI HAR Dataset/test/subject_test.txt", sep="")
+test_subject_y <- paste(project_dir, "/UCI HAR Dataset/test/subject_test.txt", sep="")
 test_subj_y <- read.delim(test_subject_y)
 
 
 ## Train data set (X,Y and subject)
-train_data_x <- paste(project_dir,"/DataFolder/UCI HAR Dataset/train/X_train.txt", sep="")
+train_data_x <- paste(project_dir,"/UCI HAR Dataset/train/X_train.txt", sep="")
 train_x <- read.table(train_data_x)
 
-train_data_y <- paste(project_dir, "/DataFolder/UCI HAR Dataset/train/y_train.txt", sep="")
+train_data_y <- paste(project_dir, "/UCI HAR Dataset/train/y_train.txt", sep="")
 train_y <- read.delim(train_data_y)
 
-train_subject_y = paste(project_dir,"/DataFolder/UCI HAR Dataset/train/subject_train.txt", sep="")
+train_subject_y = paste(project_dir,"/UCI HAR Dataset/train/subject_train.txt", sep="")
 train_subj_y <- read.delim(train_subject_y)
 
 # Attach subject and y data sets to the x data set; use feature names as column names for the resulting table.
