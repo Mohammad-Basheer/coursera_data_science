@@ -9,8 +9,8 @@ output_dir <- paste(project_dir, "/OutputFiles", sep="")
 # Get features and activity list tables
 
 ## Features and activity list data sets
-features <- read.table(paste(project_dir,"/features.txt", sep=""))
-activity_list <- read.table(paste(project_dir,"/activity_labels.txt", sep=""))
+features <- read.table(paste(project_dir,"/UCI HAR Dataset/features.txt", sep=""))
+activity_list <- read.table(paste(project_dir,"/UCI HAR Dataset/activity_labels.txt", sep=""))
 
 ## Test data set (X,Y and subject)
 test_data_x <- paste(project_dir, "/UCI HAR Dataset/test/X_test.txt", sep="")
