@@ -8,7 +8,7 @@ File List and Descriptions:
 3) OutputFiles -> folder for analysis output. ***
 4) CodeBook.txt -> contains column mappings of the tidy data and the feature list.
 5) step4_clean_data.csv <- example output for step4 data.
-6) step5_clean_data.csv <- output files for step5. Separate tables for each subject.
+6) step5_clean_data.csv <- independent output data for step5. 
 
 *** Files with roles in analysis.
 
